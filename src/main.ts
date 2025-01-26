@@ -36,7 +36,7 @@ export default function () {
     firstImagefillsDataOnPreview = getImageFillsFromNode(selectedImageNode)[0];
 
     // send the data to UI
-    getImageBytes(firstImagefillsDataOnPreview.imageFill).then((bytes) => {
+    getImageBytes(firstImagefillsDataOnPreview.imageFill).then(bytes => {
       figma.ui.postMessage({
         imageBytes: bytes,
         type: "get-node-image-bytes",

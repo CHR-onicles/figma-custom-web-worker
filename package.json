@@ -16,15 +16,15 @@
     "typescript": ">=4"
   },
   "scripts": {
-    "build": "build-figma-plugin --typecheck --minify",
-    "watch": "build-figma-plugin --typecheck --watch"
+    "build": "build-figma-plugin --minify",
+    "watch": "build-figma-plugin --watch"
   },
   "figma-plugin": {
     "editorType": [
       "figma"
     ],
-    "id": "web-worker",
-    "name": "Web Worker - Figma plugin example",
+    "id": "custom-web-worker",
+    "name": "Custom Web Worker",
     "main": "src/main.ts",
     "ui": "src/ui.tsx"
   }
